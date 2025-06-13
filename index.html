@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style.css" />
+    <script src="./static/game.js" type="module"></script>
+    <title>make-your-game</title>
+</head>
+<body>
+  <div id="game">
+    <!-- MAIN GAME -->
+    <div class="menu-container" id="container">
+      <input id="userInput" placeholder="Enter your name"></input>
+      <button id="startStory" class="start">STORY</button>
+      <button id="start" class="start">ARCADE</button>
+    </div>
+    <div id="infoDisplay">
+      <div id="score-display">
+        Score: <span id="score">0</span>
+      </div>
+      <div id="timer">Timer: 0m 0s</div>
+    </div>
+
+    <!-- NEXT BLOCK WINDOW -->
+    <div id="next-block-window" class="next-block-window">
+      <p>Next Block</p>
+      <div id="next-block-grid" class="next-block-grid"></div>
+    </div>
+    <div id="scoreTable">
+      <h2>SCOREBOARD</h2>
+      <div id="users"></div>
+      <div id="changePage">
+        <button class="nextPage" id="Back">Back</button>
+        <p id="currentPage">Page 1</p>
+        <button class="nextPage" id="Forward">Forward</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="fps">FPS: </div>
+
+  <!-- PAUSE -->
+  <div id="pause-overlay" class="overlay">
+    <div class="menu">
+      <h2>PAUSED</h2>
+      <button id="resume-btn">Resume</button>
+      <button id="restart-btn">Restart</button>
+      <button id="main-menu-btn">Main Menu</button>
+    </div>
+  </div>
+
+</body>
+</html>
